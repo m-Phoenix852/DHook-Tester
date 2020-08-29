@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+
+/*
+
+made by swz
+
+*/
+
+:root {
+  --back: rgba(50, 50, 50, 1);
+  --fore: rgba(255, 255, 255, 1);
+  --theme: rgb(0, 162, 255);
+
+  --bg-l: url("https://discord.com/assets/e92fcc9ab6e63c1a17e954af347a1f1d.svg");
+  --bg-r: url("https://discord.com/assets/7b01f72a2054561145b6dd04add417c0.svg");
+}
+
+* {
+  transition-duration: 0.2s;
+  outline: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  user-select: none;
+}
+
+input,
+button {
+  color: black;
+  width: 80vw;
+  max-width: 60vh;
+  margin: 0.25rem;
+  text-align: center;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+input {
+  height: 40px;
+}
+
+body {
+  background-color: var(--back);
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  overflow: hidden;
+}
+bg1,
+bg2 {
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+
+  background-size: 60vh;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+bg1 {
+  background-image: var(--bg-l);
+  background-position-x: left;
+}
+bg2 {
+  background-image: var(--bg-r);
+  background-position-x: right;
+}
+
+@media (max-width: 120vh) {
+  bg2 {
+    background-image: url("");
+  }
+}
+
+.title {
+  font-size: 8vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: white;
+}
+
+.mainWrapper {
+  width: fit-content;
+  height: fit-content;
+  z-index: 10;
+}
+
+button {
+  appearance: none;
+  color: var(--back);
+  padding: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+  background-color: var(--theme);
+}
+
+button:active {
+  color: black;
+  padding: 1.25rem;
+  background-color: var(--theme);
+}

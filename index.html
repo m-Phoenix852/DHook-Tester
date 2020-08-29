@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="title" content="DHook Tester" />
+    <meta
+      name="description"
+      content="Test Discord webhooks with this simple tool."
+    />
+
+    <title>DHook Tester</title>
+
+    <link rel="stylesheet" href="/style.css"/>
+    <script src="/script.js" defer></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from,Promise,Symbol,Object.setPrototypeOf,Object.getOwnPropertySymbols,Set"></script>
+    <script src="https://cdn.jsdelivr.net/npm/superagent"></script>
+  </head>
+  <body>
+    <bg1></bg1>
+    <bg2></bg2>
+    <h1 class="title">DHook Tester</h1>
+    <div class="mainWrapper">
+      <input id="webhook-url" type="text" placeholder="Webhook URL" /><br />
+      <input id="content" type="text" placeholder="Message here" /><br />
+      <input
+        id="avatar-url"
+        type="text"
+        placeholder="Avatar URL (Optional)"
+      /><br />
+      <input id="author" type="text" placeholder="Author (Optional)" /><br />
+
+      <button onclick="send()">Send</button>
+    </div>
+  </body>
+</html>
