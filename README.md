@@ -1,5 +1,7 @@
 # DHook Tester
 
-The easiest way to test your discord webhooks
-
-The website is currently hosted on [glitch](https://dhook-tester.glitch.me/)
+Test Discord webhooks with this simple tool.
+# Authors
+I (obviously) and my friend [swz](https://swz.works/)
+# Site
+Visit the site [here](https://m-phoenix852.github.io/DHook-Tester/)
