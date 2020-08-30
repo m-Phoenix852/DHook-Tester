@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 /*
 
@@ -27,10 +27,12 @@ made by swz
 input,
 button {
   color: black;
+  background-color: var(--fore);
   width: 80vw;
   max-width: 60vh;
   margin: 0.25rem;
   text-align: center;
+  border-radius: 0.3rem;
 }
 
 input:focus {
@@ -76,7 +78,7 @@ bg2 {
   background-position-x: right;
 }
 
-@media (max-width: 120vh) {
+@media (max-width: 150vh) {
   bg2 {
     background-image: url("");
   }
@@ -112,4 +114,13 @@ button:active {
   color: black;
   padding: 1.25rem;
   background-color: var(--theme);
+}
+
+.designby {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
 }
