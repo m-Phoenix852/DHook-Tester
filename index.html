@@ -13,7 +13,10 @@
 
     <title>DHook Tester</title>
 
-    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="https://swz.works/apis/v2/inputsaver"></script>
+
     <script src="/script.js" defer></script>
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from,Promise,Symbol,Object.setPrototypeOf,Object.getOwnPropertySymbols,Set"></script>
@@ -24,16 +27,35 @@
     <bg2></bg2>
     <h1 class="title">DHook Tester</h1>
     <div class="mainWrapper">
-      <input id="webhook-url" type="text" placeholder="Webhook URL" /><br />
-      <input id="content" type="text" placeholder="Message here" /><br />
       <input
+        autosave
+        id="webhook-url"
+        type="text"
+        placeholder="Webhook URL"
+      /><br />
+      <input
+        autosave
+        id="content"
+        type="text"
+        placeholder="Message here"
+      /><br />
+      <input
+        autosave
         id="avatar-url"
         type="text"
         placeholder="Avatar URL (Optional)"
       /><br />
-      <input id="author" type="text" placeholder="Author (Optional)" /><br />
+      <input
+        autosave
+        id="author"
+        type="text"
+        placeholder="Author (Optional)"
+      /><br />
 
       <button onclick="send()">Send</button>
     </div>
+    <p class="designby">
+      Design by swz.<br />Art by Discord.<br />Js by Phoenix852.
+    </p>
   </body>
 </html>
