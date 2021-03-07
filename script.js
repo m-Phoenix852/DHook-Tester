@@ -19,6 +19,7 @@ function send() {
   superagent
     .post(url)
     .send({ content: content, username: author, avatar_url: avatar })
+    .set("Origin", "https://discord.com")
     .type("form")
     .then(
       function (res) {
